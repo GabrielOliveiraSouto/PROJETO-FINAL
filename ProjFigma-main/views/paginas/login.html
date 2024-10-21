@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>teste</title>
+  <link rel="stylesheet" type="text/css" href="../estilos/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="../java/login.js"></script>
+</head>
+<body>
+<div class="meu-elemento" onmouseover="trocarCursor"()>
+  <div class="container">
+    <div class="login-panel">
+      <img src="../images/LogoNovaPNG.png" alt="LOGO" class="logo">
+      <h4 id="entre">Entrar no SP MEDICAL</h4>
+      <form id="login-form">
+        <input type="text" id="username" name="username" placeholder="CPF" required>
+        <div class="password-field">
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+            <i class="fas fa-eye-slash toggle-password" onclick="togglePasswordVisibility()"></i>
+        </div>
+        <div class="remember-me">
+          <input type="checkbox" id="remember-me" name="remember-me">
+          <label for="remember-me">Lembre-se de mim</label>
+        </div>
+        <a href="paciente/cadastroPaci.html"><button type="submit">Entrar</button></a>
+      </form>
+      <div class="signup">
+        <p>Não tem uma conta? <a href="paciente/cadastroPaci.html">Inscreva-se</a></p>
+        <p>Esqueceu a senha? <a href="senha.html">Recupere</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

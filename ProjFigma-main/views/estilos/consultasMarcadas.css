@@ -1,0 +1,131 @@
+#cabecalho {
+    background-color: black;
+    height: 9em;
+    width: 100%;
+    position: absolute;
+}
+#navBAR {
+    background-color: rgb(48, 48, 48);
+    height: 3.5em;
+    width: 100%;
+    position: absolute;
+    margin-top: 9em;
+}
+#posicaoBotM {
+    width: 99%;
+    height: 3.4em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    left: -50em;
+    margin-top: -1.75em;
+}
+#botaoCONM {
+    border-radius: 3px;
+    padding-top: 0.3em;
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgb(25, 25, 25);
+    width: 25em;
+    height: 3em;
+    text-align: center;
+    margin-left: 5em;
+    margin-top: 0.2em;
+}
+#botaoCONM:hover {
+    background-color: rgb(64, 64, 64);
+}
+#botaoCONM:active {
+    background-color: rgb(20, 20, 20);
+}
+#iconeUserCONM{
+    margin-top: -3em;
+    padding: 0.5em;
+    left: 91.5em;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+#iconeUserCONM:hover{
+    background-color: rgb(64, 64, 64);
+}
+#iconeUserCONM:active{
+    background-color: rgb(20, 20, 20);
+}
+#inpt2{
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    margin-left: 4.8em;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    background-color: rgb(39, 33, 33);
+    height: 2.5em;
+    width: 8em;
+    border: none;
+    color: rgb(241, 241, 241);
+}
+#espacoInfo{
+    top: 0em;
+    left: 50%;
+    margin-left: -17.5em;
+    box-shadow: 0em 0em 2em 0.5em black;
+    border-radius: 0.3em;
+    background-color: rgb(39, 33, 33);
+    height: 30em;
+    width: 35em;
+    position: relative;
+    display: inline-block;
+}
+#tabelaLinha{
+    background-color: aqua;
+}
+#tabelaTH{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    background-color: rgb(187, 187, 187);;
+    height: 4.5em;
+    width: 7.95em;
+}
+#tabelaTD{
+    
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(234, 234, 234);
+    height: 4em;
+}
+.carousel-control-prev{
+    height: 5em;
+    width: 20em;
+    left: 22.5em;
+    top: 20em;
+    position: absolute;
+}
+.carousel-control-next{
+    height: 20em;
+    width: 20em;
+    margin-right: 26em;
+    margin-top: -5.7em;
+    position: absolute;
+}
+.carousel-inner{
+    left: 0.5em;
+    top: 0.5em;
+}
+#demo{
+    top: 13em;
+    position: relative;
+}
+.carousel-indicators{
+    top: 29.75em;
+}
+#setaVoltar{
+    margin-left: 2em;
+    height: 2em;
+    width: auto;
+}

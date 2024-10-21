@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../estilos/senha.css">
+    <script src="../java/senha.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Recuperação de Senha</h1>
+        <form>
+            <p><strong>Escreva o seu endereço de e‑mail do SP MEDICAL, o qual foi registrado a conta. Vamos te enviar um e‑mail exemplificando para você redefinir sua senha.</strong></p>
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" placeholder="E-Mail" required>
+            <button id="voltarBtn" style="background-color: blue; color: white;">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        var voltarBtn = document.getElementById("voltarBtn");
+        voltarBtn.addEventListener("click", function() {
+            window.location.href = "enviado.html";
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,14 @@
+#corFundo {
+    background-color: #d7d6d6;
+}
+#backImage {
+    background-image: url(../images/BackgroundCadastro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body { 
+    margin: 0px;
+    overflow-x: hidden; 
+    padding: 0px;
+    border: 0px;
+}

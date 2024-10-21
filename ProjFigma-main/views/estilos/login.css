@@ -1,0 +1,114 @@
+  @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+
+body {
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Antic Slab', serif;
+}
+
+#entre {
+
+  color: #ffffff;
+
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888888;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-panel {
+  background-color: #000000;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.login-panel h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888888;
+}
+
+button {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+.remember-me {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #888888;
+  font-size: 14px;
+}
+
+.remember-me input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.signup {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.signup a {
+  color: blue;
+  text-decoration: none;
+}

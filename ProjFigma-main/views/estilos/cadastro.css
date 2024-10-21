@@ -1,0 +1,123 @@
+#blocoCad {
+    height: 500px;
+    width: 1000px;
+    background-color: rgb(0, 0, 0, 0.65);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -500px;
+    border-radius: 5px;
+}
+#inpCad {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6e7e9;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 300px;
+}
+#inpCadlist {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #e6e7e9;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 310px;
+}
+input::placeholder {
+    color: black;
+}
+#blocoPosCad {
+    height: 480px;
+    width: 980px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -490px;
+    margin-top: -240px;
+}
+#botCad {
+    position: absolute;
+    margin-top: 50px;
+    color: white;
+    background-color: rgb(0, 0, 171);
+    margin-left: 10px;
+    height: 50px;
+    width: 310px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#botCad:hover {
+    background-color: rgb(0, 0, 133);
+}
+#botCad:active {
+    background-color: rgb(0, 0, 78);
+}
+#test {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: -25px;
+    font-size: 20px;
+}
+#testAdm {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    display: inline;
+    margin-left: 20px;
+    position: relative;
+}
+#testMed {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    display: inline;
+    margin-left: 15px;
+    position: relative;
+}
+#testLog {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    display: inline;
+    margin-left: 15px;
+    position: relative;
+}
+#divBaixo {
+    margin-top: 25px;
+    position: absolute;
+    width: 1000px;
+    margin-left: -10px;
+}
+#decorBot {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#decorBot:hover {
+    color: blue;
+}
+#textoInpCad {
+    display: inline;
+    margin-top: 80px;
+    margin-bottom: -50px;
+    color: white;
+}

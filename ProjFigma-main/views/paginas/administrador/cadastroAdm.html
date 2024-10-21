@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="../../estilos/cabecalho.css">
+    <link rel="stylesheet" href="../../estilos/images.css">
+    <link rel="stylesheet" href="../../estilos/estilos.css">
+    <link rel="stylesheet" href="../../estilos/cadastro.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Administrador</title>
+    <style>
+        @font-face {
+            font-family: 'anticslab';
+            src: url(../fontes/AnticSlab-Regular.ttf)
+            format('truetype');
+        }
+    </style>
+</head>
+<body id="backImage">
+    <div id="blocoCad">
+        <div id="blocoPosCad">
+            <p id="test">Dados para cadastro do Administrador</p>
+            <div>
+                <input id="inpCad" type="text" placeholder="Nome">
+                <input id="inpCad" type="text" placeholder="CPF">
+                <input id="inpCad" type="date" placeholder="Data de nascimento">
+            </div>
+            <div>
+                <select name="Sexo" id="inpCadlist" placeholder="Sexo">
+                    <option value="">Sexo</option>
+                    <option value="">Feminino</option>
+                    <option value="">Masculino</option>
+                    <option value="">Outro</option>
+                </select>
+                <select name="etnia" id="inpCadlist" placeholder="Etnia">
+                    <option value="">etnia</option>
+                    <option value="">Preto</option>
+                    <option value="">Branco</option>
+                    <option value="">Pardo</option>
+                    <option value="">Amarelo</option>
+                    <option value="">Indígena</option>
+                </select>
+                <select name="País" id="inpCadlist" placeholder="País">
+                    <option value="">País</option>
+                    <option value="">Brasil</option>
+                    <option value="">Estados Unidos</option>
+                    <option value="">Outro</option>
+                </select>
+            </div>
+            <div><select name="Área de Atuação" id="inpCadlist" placeholder="Área de Atuação">
+                    <option value="">Área de Atuação</option>
+                    <option value="">TI</option>
+                    <option value="">RH</option>
+                    <option value="">Developer</option>
+                </select>
+                <input id="inpCad" type="text" placeholder="CRM">
+                <input id="inpCad" type="text" placeholder="E-mail SP Mecical Group">
+            </div>
+            <div>
+                 <input id="inpCad" type="text" placeholder="E-mail">
+                <input id="inpCad" type="text" placeholder="Telefone">
+                <a href="homepageAdm.html"><button id="botCad">CADASTRE-SE</button></a>
+            </div>
+            <div id="divBaixo">
+                <h4 id="testAdm">Para cadastro de Paciente <a id="decorBot" href="../paciente/cadastroPaci.html"> Clique aqui</a></h4>
+                <h4 id="testMed">Para cadastro de Médico <a id="decorBot" href="../medico/cadastroMed.html"> Clique aqui</a></h4>
+                <h4 id="testLog">Já tem conta?<a id="decorBot" href="../login.html"> Clique aqui</a></h4>
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>

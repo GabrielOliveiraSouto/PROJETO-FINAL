@@ -1,0 +1,135 @@
+.quadrado {
+    width: 795px;
+    height: 575px;
+    background-color: #0e0e0e;
+    position: absolute;
+    border-radius: 10px;
+}
+.quadrado1 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+}
+.quadrado-interno1 {
+    width: 200px;
+    height: 60px;
+    background-color: #415b97;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultado1 {
+    width: 518px;
+    height: 60px;
+    background-color: #86aedb;
+    margin-left: 750px;
+    position: absolute;
+}
+
+.quadrado-interno2 {
+    width: 200px;
+    height: 60px;
+    background-color: #415b97;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultado2 {
+    width: 518px;
+    height: 60px;
+    background-color: #86aedb;
+    margin-left: 750px;
+    position: absolute;
+}
+.quadrado-interno3 {
+    width: 200px;
+    height: 60px;
+    background-color: #415b97;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultado3 {
+    width: 518px;
+    height: 60px;
+    background-color: #86aedb;
+    margin-left: 750px;
+    position: absolute;
+}
+.quadrado-interno4 {
+    width: 200px;
+    height: 60px;
+    background-color:#415b97;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultado4 {
+    width: 518px;
+    height: 60px;
+    background-color: #86aedb;
+    margin-left: 750px;
+    position: absolute;
+}
+.quadrado-interno5 {
+    width: 200px;
+    height: 60px;
+    background-color: #415b97;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultado5 {
+    width: 518px;
+    height: 60px;
+    background-color: #86aedb;
+    margin-left: 750px;
+    position: absolute; 
+}
+.quadradodebaixo {
+    width: 735px;
+    height: 100px;
+    background-color: rgb(0, 4, 87);
+    margin-top: 5px;
+    margin-left: 30px;
+    color: white;
+    font-size: x-small;
+    text-align: center;
+    margin-top: 15px;
+    text-align: justify;
+}
+.titulo {
+    width: 734px;
+    height: 60px;
+    background-color: rgb(0, 4, 87);
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.resImg img {
+
+    height: 30px;
+    width: 30px;
+    background-color: rgb(0, 4, 87);
+    position: absolute;
+    right: -10px;
+    margin-top: -15px;
+
+}

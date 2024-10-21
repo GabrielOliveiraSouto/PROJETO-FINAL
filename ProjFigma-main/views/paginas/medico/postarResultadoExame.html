@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Consulta</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+    p {
+        font-family: 'Antic Slab', serif;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }   
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color:#d7d6d6;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Padrão */
+    }
+
+    .quadrado {
+        top: 4em;
+        width: 785px;
+        height: 38em;
+        background-color: #000000;
+        position: absolute;
+        border-radius: 10px;
+    }
+
+    .quadrado1 {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 15px;
+        color: white;
+
+    }
+
+    .quadrado-interno1 {
+        width: 200px;
+        height: 60px;
+        background-color: #415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resultado1 {
+        width: 518px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute;
+    }
+
+    .quadrado-interno2 {
+        width: 200px;
+        height: 60px;
+        background-color: #415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resultado2 {
+        width: 518px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute;
+    }
+
+    .quadrado-interno3 {
+        width: 200px;
+        height: 60px;
+        background-color: #415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resultado3 {
+        width: 518px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute;
+    }
+
+    .quadrado-interno4 {
+        width: 200px;
+        height: 60px;
+        background-color:#415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resultado4 {
+        width: 518px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute;
+    }
+
+    .quadrado-interno5 {
+        width: 200px;
+        height: 60px;
+        background-color: #415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quadrado-interno6 {
+        width: 200px;
+        height: 60px;
+        background-color: #415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quadrado-interno7 {
+        width: 200px;
+        height: 60px;
+        background-color: #415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quadrado-interno8 {
+        width: 200px;
+        height: 60px;
+        background-color: #415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .quadrado-interno9 {
+        width: 200px;
+        height: 60px;
+        background-color: #415b97;
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resultado5 {
+        width: 519px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute; 
+    }
+
+    .resultado6 {
+        width: 518px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute;
+    }
+
+    .resultado7 {
+        width: 518px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute;
+    }
+
+    .resultado8 {
+        width: 518px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute;
+    }
+    .resultado9 {
+        width: 518px;
+        height: 60px;
+        margin-left: 750px;
+        position: absolute;
+    }
+    .quadradodebaixo {
+        width: 735px;
+        height: 60px;
+        background-color: rgb(0, 7, 140);
+        margin-top: 5px;
+        margin-left: 30px;
+        color: white;
+        font-size: x-small;
+        text-align: center;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+        opacity: 1;
+        transition: opacity 0.3s;
+        cursor: pointer;
+
+        
+    }
+
+    .quadradodebaixo:hover {
+        opacity: 0.5;
+}
+    .quadradodebaixo:active{
+    background-color: blue;
+    opacity: 1;
+}
+
+    h3 {
+        padding-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-family: 'Antic Slab', serif;
+        text-decoration: none;
+
+    }
+
+
+
+    .titulo {
+    
+        width: 734px;
+        height: 60px;
+        background-color: rgb(0, 7, 140);
+        margin-top: 10px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .peni3 img {
+
+        height: 30px;
+        width: 30px;
+        background-color:rgb(0, 7, 140);
+        position: absolute;
+        right: -10px;
+        margin-top: -15px;
+
+    }
+
+    input {
+
+        width: 514px;
+        height: 60px;
+        background-color: #86aedb;
+        position: absolute;
+        border: rgba(0, 128, 0, 0);
+        outline: 0;
+        text-align: center;
+        color: white;
+        font-family: 'Antic Slab', serif;
+        font-size: large;
+
+
+
+    }
+
+    input[type="date"]
+    input[type="time"] {
+        font-size: medium;
+        transition: opacity 0.3s;
+
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      filter: invert(100%); /* Inverter a cor do ícone */
+    }
+
+    input[type="time"]::-webkit-calendar-picker-indicator {
+      filter: invert(100%); /* Inverter a cor do ícone */
+    }
+
+    select {
+
+        width: 518px;
+        height: 60px;
+        background-color: #86aedb;
+        position: absolute;
+        border: rgba(0, 128, 0, 0);
+        outline: 0;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Antic Slab', serif;
+        font-size: large;
+
+
+    }
+
+    input::placeholder {
+        color:  rgba(255, 255, 255, 0.689);
+    }
+
+  </style>
+</head>
+<body>
+    <div class="titulo">
+        <div class="quadrado">
+            <div class="qf1">
+                <div class="quadrado1">
+                    <div class="titulo">
+                        <div class="peni3" href="#"><a href="../medico/homepageMed.html"><img src="../../images/userlmn_04acd6c136232510eb2c916725381641.png"></a></div>
+                        <p>CONSULTA</p>
+                    </div>
+                    <div class="quadrado-interno1">
+                        <p>Nome do Paciente:</p>
+                        <div class="resultado1"><input type="text" name="nome" size="40" placeholder="Nome do Paciente"></div>
+                    </div>
+                    <div class="quadrado-interno4">
+                        <p>Data:</p>
+                        <div class="resultado4"><input type="date"></div>
+                    </div>
+                    <div class="quadrado-interno5">
+                        <p>Hora:</p>
+                        <div class="resultado5"><input type="time"></div>
+                    </div>
+                    <div class="quadrado-interno6">
+                        <p>Selecione o Médico:</p>
+                        <div class="resultado6">
+                            <select name="opcao" size="1">
+                                <option value="">Medico</option>
+                                <option value="op1">Leonardo Alves Azevedo</option>
+                                <option value="op2">Carolina Almeida Sousa</option>
+                                <option value="op3">Matilde Barbosa Cardoso</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quadrado-interno7">
+                        <p>Selecione o Exame:</p>
+                        <div class="resultado7">
+                            <select name="opcao" size="1">
+                                <option value="">Exames</option>
+                                <option value="op1">Ultrassonografia Transcraniana</option>
+                                <option value="op2">Ressônancia Magnética</option>
+                                <option value="op3">Tomografia Computarizada</option>
+                                <option value="op4">Eletroencefalografia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quadrado-interno9">
+                        <p>Observações do exame</p>
+                        <div class="resultado9"><input style="word-break: normal;" type="text" size="40" placeholder="Insira aqui"></div>
+                    </div>
+                    <div class="quadradodebaixo">
+                        <p>Confirmar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>

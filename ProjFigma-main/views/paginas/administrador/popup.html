@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #popup2{
+    position: fixed;
+    background-color: white;
+    display: none;
+    padding: 20px;
+    top:50%;
+    left: 50%;
+    width: 570px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0,0.3);
+    z-index: 9999;
+}
+    </style>
+   
+</head>
+<body>
+    <input onclick="openPopup2()" type="button" value="a mãe do jao é linda?">
+    <div id="popup2">
+        <p>Sucesso!</p>
+    </div>
+    <script>
+        function openPopup2(){
+        document.getElementById("popup2");
+        popup.style.display ="block";
+    }
+    function closePopup2(){
+        document.getElementById("popup2");
+        popup.style.display = "none";
+    }
+    </script>
+</body>
+</html>
