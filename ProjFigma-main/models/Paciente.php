@@ -11,24 +11,33 @@ class Paciente{
     public $nacionalidade;
     public $sexo;
     public $etnia;
+    public $pais;
+    public $cidade;
+    public $estado;
+    public $endereço;
     public $telefone;
     public $email;
-    public $estado;
-    public $cidade;
 
     public function __construct() {
         $database = new Database();
         $this->conn = $database->getConnection();
     }
     public function save() {
-        $query = "INSERT INTO " . $this->table_name . " (nome, cpf, data_nascimento, nacionalidade, sexo, etnia, telefone, email, estado, cidade) VALUES (:nome, :cpf, :data_nascimento, :nascimento, :sexo, :etnia, :telefone, :email, :estado, :cidade)";
+        $query = "INSERT INTO " . $this->table_name . " (nome, cpf, data_nascimento, nacionalidade,sexo, etnia, pais, cidade, estado, endereço, telefone, email) VALUES (:nome, :cpf, :data_nascimento, :nacionalidade, :sexo, :etnia, :pais, :cidade, :estado, :endereço, :telefone, :email)";
         $stmt = $this->conn->prepare($query);
 
         $stmt->bindParam(':nome', $this->nome);
-        $stmt->bindParam(':author', $this->author);
-        $stmt->bindParam(':publication_year', $this->publication_year);
-        $stmt->bindParam(':genre', $this->genre);
-        $stmt->bindParam(':price', $this->price);
+        $stmt->bindParam(':cpf', $this->cpf);
+        $stmt->bindParam(':data_nascimento', $this->data_nascimento);
+        $stmt->bindParam(':nacionalidade', $this->nacionalidade);
+        $stmt->bindParam(':sexo', $this->sexo);
+        $stmt->bindParam(':etnia', $this->etnia);
+        $stmt->bindParam(':pais', $this->pais);
+        $stmt->bindParam(':cidade', $this->cidade);
+        $stmt->bindParam(':estado', $this->estado);
+        $stmt->bindParam(':endereço', $this->endereço);
+        $stmt->bindParam(':telefone', $this->telefone);
+        $stmt->bindParam(':email', $this->email);
 
         if ($stmt->execute()) {
             return true;
@@ -36,5 +45,12 @@ class Paciente{
 
         return false;
     }
+
+    public function getAll() {
+        $query = "SELECT * FROM " . $this->table_name;
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+}

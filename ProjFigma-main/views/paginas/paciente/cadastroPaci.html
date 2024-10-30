@@ -19,54 +19,56 @@
     <div id="blocoCad">
         <div id="blocoPosCad">
             <p id="test">Dados para cadastro do paciente</p>
-            <div>
-                <input id="inpCad" type="text" placeholder="Nome">
-                <input id="inpCad" type="text" placeholder="CPF">
-                <input id="inpCad" type="date" placeholder="Data de nascimento">
-            </div>
-            <div>
-                <select name="Sexo" id="inpCadlist">
-                    <option value="">Sexo</option>
-                    <option value="">Feminino</option>
-                    <option value="">Masculino</option>
-                    <option value="">Outro</option>
-                </select>
-                <select name="etnia" id="inpCadlist">
-                    <option value="">Etnia</option>
-                    <option value="">Preto</option>
-                    <option value="">Branco</option>
-                    <option value="">Pardo</option>
-                    <option value="">Amarelo</option>
-                    <option value="">Indígena</option>
-                </select>
-                <select name="País" id="inpCadlist">
-                    <option value="">País</option>
-                    <option value="">Brasil</option>
-                    <option value="">Estados Unidos</option>
-                    <option value="">Outro</option>
-                </select>
-            </div>
-            <div>
-                <select name="Cidade" id="inpCadlist">
-                    <option value="">Cidade</option>
-                    <option value="">Salto</option>
-                    <option value="">Itu</option>
-                    <option value="">Indaiatuba</option>
-                    <option value="">Sorocaba</option>
-                </select>
-                <select name="Estado" id="inpCadlist">
-                    <option value="">Estado</option>
-                    <option value="">São Paulo</option>
-                    <option value="">Rio de Janeiro</option>
-                    <option value="">Acre</option>
-                </select>
-                <input id="inpCad" type="text" placeholder="Endereço">
-            </div>
-            <div>
-                <input id="inpCad" type="text" placeholder="Telefone">
-                <input id="inpCad" type="text" placeholder="E-mail">
-                <a href="homepagePaci.html"><button id="botCad">CADASTRE-SE</button></a>
-            </div>
+            <form action="/PROJETO-FINAL/ProjFigma-main/paciente/cadastro">
+                <div>
+                    <div>
+                        <input id="inpCad" type="text" name="Nome" placeholder="Nome">
+                        <input id="inpCad" type="text" name="CPF" placeholder="CPF">
+                        <input id="inpCad" type="date" name="Data de nascimento" placeholder="Data de nascimento">
+                    </div>
+                    <div>
+                        <select name="Sexo" id="inpCadlist">
+                            <option value="Sexo">Sexo</option> <!--Colocar opção Default-->
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculin">Masculino</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <select name="Etnia" id="inpCadlist">
+                            <option value="Etnia">Etnia</option> <!--Colocar opção Default-->
+                            <option value="Preto">Preto</option>
+                            <option value="Branco">Branco</option>
+                            <option value="Pardo">Pardo</option>
+                            <option value="Amarelo">Amarelo</option>
+                            <option value="Indígena">Indígena</option>
+                        </select>
+                        <select name="País" id="inpCadlist">
+                            <option value="País">País</option> <!--Colocar opção Default-->
+                            <option value="Brasil">Brasil</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="Cidade" id="inpCadlist">
+                            <option value="Cidade">Cidade</option> <!--Colocar opção Default-->
+                            <option value="Salto">Salto</option>
+                            <option value="Itu">Itu</option>
+                            <option value="Indaiatuba">Indaiatuba</option>
+                            <option value="Sorocaba">Sorocaba</option>
+                        </select>
+                        <select name="Estado" id="inpCadlist">
+                            <option value="Estado">Estado</option> <!--Colocar opção Default-->
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Acre">Acre</option>
+                        </select>
+                        <input id="inpCad" type="text" name="Endereço" placeholder="Endereço">
+                    </div>
+                        <input id="inpCad" type="text" name="Telefone" placeholder="Telefone">
+                        <input id="inpCad" type="text" name="E-mail" placeholder="E-mail">
+                        <input type="submit" id="botCad" value="Cadastrar"><!--<a href="homepagePaci.html"></a>-->
+                    </div>
+            </form>
             <div id="divBaixo">
                 <h4 id="testAdm">Para cadastro de Administrador <a id="decorBot" href="../administrador/cadastroAdm.html"> Clique aqui</a></h4>
                 <h4 id="testMed">Para cadastro de Médico <a id="decorBot" href="../medico/cadastroMed.html"> Clique aqui</a></h4>
