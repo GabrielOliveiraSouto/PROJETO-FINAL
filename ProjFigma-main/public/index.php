@@ -10,18 +10,16 @@ require_once '../controllers/PacienteController.php';
 // Lógica de roteamento
 $request = $_SERVER['REQUEST_URI'];
 
+echo $request;
+
 switch ($request) {
-    case '/PROJETO-FINAL/ProjFigma-main/public/':
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/':
         $controller = new PacienteController();
-        $controller->home();
+        $controller->showForm();
         break;
-    case '/PROJETO-FINAL/ProjFigma-main/':
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/paciente/save':
         $controller = new PacienteController();
-        $controller->listBooks();
-        break;
-    case '/PROJETO-FINAL/ProjFigma-main/paciente/cadastro':
-        $controller = new PacienteController();
-        $controller->saveBook();
+        $controller->savePaciente();
         break;
     default:
         http_response_code(404);

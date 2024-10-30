@@ -1,10 +1,10 @@
 <?php
 
-require_once '../config/database.php';
+require_once '../database.php';
 
-class Paciente{
+class Paciente {
     private $conn;
-    private $table_name = "Paciente";
+    private $table_name = "pacientes";
     public $nome;
     public $cpf;
     public $data_nascimento;
@@ -14,7 +14,7 @@ class Paciente{
     public $pais;
     public $cidade;
     public $estado;
-    public $endereço;
+    public $endereco; // Renomeado para "endereco"
     public $telefone;
     public $email;
 
@@ -22,8 +22,9 @@ class Paciente{
         $database = new Database();
         $this->conn = $database->getConnection();
     }
+
     public function save() {
-        $query = "INSERT INTO " . $this->table_name . " (nome, cpf, data_nascimento, nacionalidade,sexo, etnia, pais, cidade, estado, endereço, telefone, email) VALUES (:nome, :cpf, :data_nascimento, :nacionalidade, :sexo, :etnia, :pais, :cidade, :estado, :endereço, :telefone, :email)";
+        $query = "INSERT INTO " . $this->table_name . " (nome, nacionalidade, cpf, data_nascimento, sexo, etnia, pais, cidade, estado, endereco, telefone, email) VALUES (:nome, :nacionalidade, :cpf, :data_nascimento, :sexo, :etnia, :pais, :cidade, :estado, :endereco, :telefone, :email)";
         $stmt = $this->conn->prepare($query);
 
         $stmt->bindParam(':nome', $this->nome);
@@ -35,7 +36,7 @@ class Paciente{
         $stmt->bindParam(':pais', $this->pais);
         $stmt->bindParam(':cidade', $this->cidade);
         $stmt->bindParam(':estado', $this->estado);
-        $stmt->bindParam(':endereço', $this->endereço);
+        $stmt->bindParam(':endereco', $this->endereco); // Atualizado aqui
         $stmt->bindParam(':telefone', $this->telefone);
         $stmt->bindParam(':email', $this->email);
 
@@ -51,6 +52,6 @@ class Paciente{
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 
-}
