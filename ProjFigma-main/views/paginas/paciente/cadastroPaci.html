@@ -17,9 +17,10 @@
 </head>
 <body id="backImage">
     <div id="blocoCad">
-        <div id="blocoPosCad">
-            <p id="test">Dados para cadastro do paciente</p>
-            <form action="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/paciente/save" method="post">
+      <!--  <div id="blocoPosCad">-->
+            
+            <form id="blocoPosCad" action="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/paciente/save" method="post">
+                <p id="test">Dados para cadastro do paciente</p>
                 <div>
                     <div>
                         <input id="inpCad" type="text" name="Nome" placeholder="Nome">
@@ -66,15 +67,19 @@
                     </div>
                         <input id="inpCad" type="text" name="Telefone" placeholder="Telefone">
                         <input id="inpCad" type="text" name="E-mail" placeholder="E-mail">
+                        <input id="inpCad" type="text" name="Nacionalidade" placeholder="Nacionalidade">
+                    </div>
+                    <div>
                         <input type="submit" id="botCad" value="Cadastrar"><!--<a href="homepagePaci.html"></a>-->
                     </div>
-            </form>
+            
             <div id="divBaixo">
                 <h4 id="testAdm">Para cadastro de Administrador <a id="decorBot" href="../administrador/cadastroAdm.html"> Clique aqui</a></h4>
                 <h4 id="testMed">Para cadastro de Médico <a id="decorBot" href="../medico/cadastroMed.html"> Clique aqui</a></h4>
                 <h4 id="testLog">Já tem conta?<a id="decorBot" href="../login.html"> Clique aqui</a></h4>
             </div>
-        </div>
+        </form>
+     <!--   </div>-->
     </div>
     <footer>
     </footer>
