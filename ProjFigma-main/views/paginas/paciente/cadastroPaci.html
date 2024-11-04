@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <link rel="stylesheet" href="../../estilos/images.css">
-    <link rel="stylesheet" href="../../estilos/estilos.css">
-    <link rel="stylesheet" href="../../estilos/cadastro.css">
+    <link rel="stylesheet" href="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/views/estilos/images.css">
+    <link rel="stylesheet" href="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/views/estilos/estilos.css">
+    <link rel="stylesheet" href="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/views/estilos/cadastro.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,24 +17,23 @@
 </head>
 <body id="backImage">
     <div id="blocoCad">
-      <!--  <div id="blocoPosCad">-->
-            
-            <form id="blocoPosCad" action="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/paciente/save" method="post">
-                <p id="test">Dados para cadastro do paciente</p>
+        <div id="blocoPosCad">
+            <p id="test">Dados para cadastro do paciente</p>
+            <form action="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/save" method="post">
                 <div>
                     <div>
                         <input id="inpCad" type="text" name="Nome" placeholder="Nome">
                         <input id="inpCad" type="text" name="CPF" placeholder="CPF">
-                        <input id="inpCad" type="date" name="Data_de_nascimento" placeholder="Data de nascimento">
+                        <input id="inpCad" type="date" name="Data de nascimento" placeholder="Data de nascimento">
                     </div>
                     <div>
-                        <select name="Sexo" id="inpCadlist">
+                        <select name="Sexo" id="inpCad">
                             <option value="Sexo">Sexo</option> <!--Colocar opção Default-->
-                            <option value="feminino">Feminino</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="outro">Outro</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Outro">Outro</option>
                         </select>
-                        <select name="Etnia" id="inpCadlist">
+                        <select name="Etnia" id="inpCad">
                             <option value="Etnia">Etnia</option> <!--Colocar opção Default-->
                             <option value="Preto">Preto</option>
                             <option value="Branco">Branco</option>
@@ -42,7 +41,7 @@
                             <option value="Amarelo">Amarelo</option>
                             <option value="Indígena">Indígena</option>
                         </select>
-                        <select name="Pais" id="inpCadlist">
+                        <select name="Pais" id="inpCad">
                             <option value="Pais">País</option> <!--Colocar opção Default-->
                             <option value="Brasil">Brasil</option>
                             <option value="Estados Unidos">Estados Unidos</option>
@@ -50,36 +49,32 @@
                         </select>
                     </div>
                     <div>
-                        <select name="Cidade" id="inpCadlist">
+                        <select name="Cidade" id="inpCad">
                             <option value="Cidade">Cidade</option> <!--Colocar opção Default-->
                             <option value="Salto">Salto</option>
                             <option value="Itu">Itu</option>
                             <option value="Indaiatuba">Indaiatuba</option>
                             <option value="Sorocaba">Sorocaba</option>
                         </select>
-                        <select name="Estado" id="inpCadlist">
+                        <select name="Estado" id="inpCad">
                             <option value="Estado">Estado</option> <!--Colocar opção Default-->
                             <option value="São Paulo">São Paulo</option>
                             <option value="Rio de Janeiro">Rio de Janeiro</option>
                             <option value="Acre">Acre</option>
                         </select>
-                        <input id="inpCad" type="text" name="Endereço" placeholder="Endereço">
+                        <input id="inpCad" type="text" name="Endereco" placeholder="Endereço">
                     </div>
                         <input id="inpCad" type="text" name="Telefone" placeholder="Telefone">
                         <input id="inpCad" type="text" name="E-mail" placeholder="E-mail">
-                        <input id="inpCad" type="text" name="Nacionalidade" placeholder="Nacionalidade">
+                        <a href=""></a><input type="submit" id="botCad" value="Cadastrar"></a>
                     </div>
-                    <div>
-                        <input type="submit" id="botCad" value="Cadastrar"><!--<a href="homepagePaci.html"></a>-->
-                    </div>
-            
+            </form>
             <div id="divBaixo">
                 <h4 id="testAdm">Para cadastro de Administrador <a id="decorBot" href="../administrador/cadastroAdm.html"> Clique aqui</a></h4>
                 <h4 id="testMed">Para cadastro de Médico <a id="decorBot" href="../medico/cadastroMed.html"> Clique aqui</a></h4>
                 <h4 id="testLog">Já tem conta?<a id="decorBot" href="../login.html"> Clique aqui</a></h4>
             </div>
-        </form>
-     <!--   </div>-->
+        </div>
     </div>
     <footer>
     </footer>

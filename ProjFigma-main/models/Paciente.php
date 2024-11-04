@@ -24,13 +24,12 @@ class Paciente {
     }
 
     public function save() {
-        $query = "INSERT INTO " . $this->table_name . " (nome, nacionalidade, cpf, data_nascimento, sexo, etnia, pais, cidade, estado, endereco, telefone, email) VALUES (:nome, :nacionalidade, :cpf, :data_nascimento, :sexo, :etnia, :pais, :cidade, :estado, :endereco, :telefone, :email)";
+        $query = "INSERT INTO " . $this->table_name . " (nome, cpf, data_nascimento, sexo, etnia, pais, cidade, estado, endereco, telefone, email) VALUES (:nome, :cpf, :data_nascimento, :sexo, :etnia, :pais, :cidade, :estado, :endereco, :telefone, :email)";
         $stmt = $this->conn->prepare($query);
 
         $stmt->bindParam(':nome', $this->nome);
         $stmt->bindParam(':cpf', $this->cpf);
         $stmt->bindParam(':data_nascimento', $this->data_nascimento);
-        $stmt->bindParam(':nacionalidade', $this->nacionalidade);
         $stmt->bindParam(':sexo', $this->sexo);
         $stmt->bindParam(':etnia', $this->etnia);
         $stmt->bindParam(':pais', $this->pais);

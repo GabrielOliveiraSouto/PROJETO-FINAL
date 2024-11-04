@@ -14,17 +14,28 @@ echo $request;
 
 switch ($request) {
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/':
-        $controller = new PacienteController();
-        $controller->showForm();
+        require_once '../views/paginas/homepagePadrao.html';        
         break;
-    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/paciente/save':
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/login':
+        require_once '../views/paginas/login.html';
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/home':
+        require_once '../views/paginas/paciente/homepagePaci.html';        
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/cadastro':
+        $controller = new PacienteController();
+        $controller->showCadastroPaciente();
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/save';
         $controller = new PacienteController();
         $controller->savePaciente();
         break;
     default:
+    /*case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main':
+        $controller = new PacienteController();
+        $controller->savePaciente();
+        break;*/
         http_response_code(404);
-        echo "Página
-
- não encontrada.";
+        echo "Página não encontrada.";
         break;
 }
