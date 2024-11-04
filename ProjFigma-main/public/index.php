@@ -6,6 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once '../controllers/PacienteController.php';
+require_once '../controllers/MedicosController.php';
 
 // Lógica de roteamento
 $request = $_SERVER['REQUEST_URI'];
@@ -29,6 +30,17 @@ switch ($request) {
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/save';
         $controller = new PacienteController();
         $controller->savePaciente();
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/cadastro':
+        $controller = new MedicoController();
+        $controller->showCadastroMedico();
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/save';
+        $controller = new MedicoController();
+        $controller->saveMedico();
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/home':
+        require_once '../views/paginas/medico/homepageMed.html';        
         break;
     default:
     /*case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main':

@@ -20,48 +20,50 @@
     <div id="blocoCad">
         <div id="blocoPosCad">
             <p id="test">Dados para cadastro do Médico</p>
-            <div>
-                <input id="inpCad" type="text" placeholder="Nome">
-                <input id="inpCad" type="text" placeholder="CPF">
-                <input id="inpCad" type="date" placeholder="Data de nascimento">
-            </div>
-            <div>
-                <select name="Sexo" id="inpCadlist">
-                    <option value="">Sexo</option>
-                    <option value="">Feminino</option>
-                    <option value="">Masculino</option>
-                    <option value="">Outro</option>
-                </select>
-                <select name="etnia" id="inpCadlist">
-                    <option value="">Etnia</option>
-                    <option value="">Preto</option>
-                    <option value="">Branco</option>
-                    <option value="">Pardo</option>
-                    <option value="">Amarelo</option>
-                    <option value="">Indígena</option>
-                </select>
-                <select name="País" id="inpCadlist">
-                    <option value="">País</option>
-                    <option value="">Brasil</option>
-                    <option value="">Estados Unidos</option>
-                    <option value="">Outro</option>
-                </select>
-            </div>
-            <div>
-                <select name="Unidade" id="inpCadlist">
-                    <option value="">Unidade</option>
-                    <option value="">UN1-São Paulo</option>
-                    <option value="">UN2-Rio de Janeiro</option>
-                    <option value="">UN3-Acre</option>
-                </select>
-                <input id="inpCad" type="text" placeholder="CRM">
-                <input id="inpCad" type="text" placeholder="E-mail SP Mecical Group">
-            </div>
-            <div>
-                 <input id="inpCad" type="text" placeholder="E-mail">
-                <input id="inpCad" type="text" placeholder="Telefone">
-                <a href="homepageMed.html"><button id="botCad">CADASTRE-SE</button></a>
-            </div>
+            <form action="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/save" method="post">
+                <div>
+                    <input id="inpCad" type="text" name="nome" naplaceholder="Nome">
+                    <input id="inpCad" type="text" name="cpf" placeholder="CPF">
+                    <input id="inpCad" type="date" name="data_nascimento" placeholder="Data de nascimento">
+                </div>
+                <div>
+                    <select name="sexo" id="inpCadlist">
+                        <option value="Sexo">Sexo</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <select name="etnia" id="inpCadlist">
+                        <option value="Etnia">Etnia</option>
+                        <option value="Preto">Preto</option>
+                        <option value="Branco">Branco</option>
+                        <option value="Pardo">Pardo</option>
+                        <option value="Amerelo">Amarelo</option>
+                        <option value="Indigena">Indígena</option>
+                    </select>
+                    <select name="pais" id="inpCadlist">
+                        <option value="Pais">País</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Outros">Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="unidade" id="inpCadlist">
+                        <option value="Unidade">Unidade</option>
+                        <option value="UN1-São Paulo">UN1-São Paulo</option>
+                        <option value="UN2-Rio de Janeiro">UN2-Rio de Janeiro</option>
+                        <option value="UN3-Acre">UN3-Acre</option>
+                    </select>
+                    <input id="inpCad" type="text" name="crm" placeholder="CRM">
+                    <input id="inpCad" type="text" name="email_sp_mecical_group" placeholder="E-mail SP Mecical Group">
+                </div>
+                <div>
+                    <input id="inpCad" type="text" name="email" placeholder="E-mail">
+                    <input id="inpCad" type="text" name="telefone" placeholder="Telefone">
+                    <a href=""></a><input type="submit" id="botCad" value="Cadastrar"></a>
+                </div>
+            </form>
             <div id="divBaixo">
                 <h4 id="testAdm">Para cadastro de Administrador <a id="decorBot" href="../administrador/cadastroAdm.html"> Clique aqui</a></h4>
                 <h4 id="testMed">Para cadastro de Paciente<a id="decorBot" href="../paciente/cadastroPaci.html"> Clique aqui</a></h4>

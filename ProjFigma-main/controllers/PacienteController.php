@@ -24,7 +24,7 @@ class PacienteController {
         $paciente ->email = $_POST['E-mail'];
 
         // Salva no banco de dados
-        if ($paciente->save()) {
+        if ($paciente->savePaci()) {
             // Redireciona para a página de listagem
             header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/home');
         } else {

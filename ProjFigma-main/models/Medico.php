@@ -2,28 +2,28 @@
 
 require_once '../database.php';
 
-class Paciente {
+class Medico {
     private $conn;
-    private $table_name = "pacientes";
+    private $table_name = "medicos";
     public $nome;
     public $cpf;
     public $data_nascimento;
     public $sexo;
     public $etnia;
     public $pais;
-    public $cidade;
-    public $estado;
-    public $endereco; // Renomeado para "endereco"
+    public $unidade;
+    public $crm;
+    public $email_sp_medical_group;
+    public $email; // Renomeado para "endereco"
     public $telefone;
-    public $email;
 
     public function __construct() {
         $database = new Database();
         $this->conn = $database->getConnection();
     }
 
-    public function savePaci() {
-        $query = "INSERT INTO " . $this->table_name . " (nome, cpf, data_nascimento, sexo, etnia, pais, cidade, estado, endereco, telefone, email) VALUES (:nome, :cpf, :data_nascimento, :sexo, :etnia, :pais, :cidade, :estado, :endereco, :telefone, :email)";
+    public function saveMed() {
+        $query = "INSERT INTO " . $this->table_name . " (nome, cpf, data_nascimento, sexo, etnia, pais, unidade, crm, email_sp_medical_group, email, telefone) VALUES (:nome, :cpf, :data_nascimento, :sexo, :etnia, :pais, :unidade, :crm, :email_sp_medical_group, :email, :telefone)";
         $stmt = $this->conn->prepare($query);
 
         $stmt->bindParam(':nome', $this->nome);
@@ -32,11 +32,11 @@ class Paciente {
         $stmt->bindParam(':sexo', $this->sexo);
         $stmt->bindParam(':etnia', $this->etnia);
         $stmt->bindParam(':pais', $this->pais);
-        $stmt->bindParam(':cidade', $this->cidade);
-        $stmt->bindParam(':estado', $this->estado);
-        $stmt->bindParam(':endereco', $this->endereco); // Atualizado aqui
-        $stmt->bindParam(':telefone', $this->telefone);
+        $stmt->bindParam(':unidade', $this->unidade);
+        $stmt->bindParam(':crm', $this->crm);
+        $stmt->bindParam(':email_sp_medical_group', $this->email_sp_medical_group); // Atualizado aqui
         $stmt->bindParam(':email', $this->email);
+        $stmt->bindParam(':telefone', $this->telefone);
 
         if ($stmt->execute()) {
             return true;
