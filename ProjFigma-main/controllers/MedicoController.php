@@ -26,7 +26,7 @@ class MedicoController {
         // Salva no banco de dados
         if ($medico->saveMed()) {
             // Redireciona para a página de listagem
-            header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/home');
+            header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/home');
         } else {
             echo "Erro ao salvar o livro!";
         }

@@ -6,7 +6,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once '../controllers/PacienteController.php';
-require_once '../controllers/MedicosController.php';
+require_once '../controllers/MedicoController.php';
+require_once '../controllers/AdminController.php';
 
 // Lógica de roteamento
 $request = $_SERVER['REQUEST_URI'];
@@ -23,6 +24,12 @@ switch ($request) {
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/home':
         require_once '../views/paginas/paciente/homepagePaci.html';        
         break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/home':
+        require_once '../views/paginas/medico/homepaageMed.html';        
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/home':
+        require_once '../views/paginas/administrador/homepageAdm.html';        
+        break;  
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/cadastro':
         $controller = new PacienteController();
         $controller->showCadastroPaciente();
@@ -39,14 +46,15 @@ switch ($request) {
         $controller = new MedicoController();
         $controller->saveMedico();
         break;
-    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/home':
-        require_once '../views/paginas/medico/homepageMed.html';        
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/cadastro';
+        $controller = new AdminController();
+        $controller->showCadastroAdmin();
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/save';
+        $controller = new AdminController();
+        $controller->saveAdmin();
         break;
     default:
-    /*case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main':
-        $controller = new PacienteController();
-        $controller->savePaciente();
-        break;*/
         http_response_code(404);
         echo "Página não encontrada.";
         break;
