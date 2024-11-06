@@ -26,19 +26,16 @@ class PacienteController {
         // Salva no banco de dados
         if ($paciente->savePaci()) {
             // Redireciona para a página de listagem
-            header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/home');
+            header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/lista');
         } else {
             echo "Erro ao salvar o livro!";
         }
     }
 
-    public function listPaciente() {
-        // Pega todos os livros do banco de dados
+    public function listPaciente() { // Pega todos os livros do banco de dados
+       
         $paciente = new Paciente();
-        $paciente = $paciente->getAll();
-
-        // Exibe a lista de livros
-        require_once '../views/book_list.php';
+        $pacientes = $paciente->getAll();
+        require_once '../views/paginas/paciente/listaPaci.php';// Exibe a lista de livros
     }
-    
 }

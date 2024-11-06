@@ -34,23 +34,27 @@ switch ($request) {
         $controller = new PacienteController();
         $controller->showCadastroPaciente();
         break;
-    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/save';
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/save':
         $controller = new PacienteController();
         $controller->savePaciente();
+        break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/lista':
+        $controller = new PacienteController();
+        $controller->listPaciente();
         break;
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/cadastro':
         $controller = new MedicoController();
         $controller->showCadastroMedico();
         break;
-    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/save';
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/save':
         $controller = new MedicoController();
         $controller->saveMedico();
         break;
-    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/cadastro';
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/cadastro':
         $controller = new AdminController();
         $controller->showCadastroAdmin();
         break;
-    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/save';
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/save':
         $controller = new AdminController();
         $controller->saveAdmin();
         break;
