@@ -29,7 +29,6 @@ switch ($request) {
         break;
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/home':
         require_once '../views/paginas/administrador/homepageAdm.html';        
-        break;  
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/cadastro':
         $controller = new PacienteController();
         $controller->showCadastroPaciente();
