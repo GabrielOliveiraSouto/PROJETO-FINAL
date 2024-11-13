@@ -26,9 +26,9 @@ class PacienteController {
         // Salva no banco de dados
         if ($paciente->savePaci()) {
             // Redireciona para a página de listagem
-            header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/lista');
+            header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/home');
         } else {
-            echo "Erro ao salvar o livro!";
+            echo "Erro ao cadastrar";
         }
     }
 

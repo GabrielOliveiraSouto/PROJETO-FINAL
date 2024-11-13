@@ -16,19 +16,19 @@ echo $request;
 
 switch ($request) {
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/':
-        require_once '../views/paginas/homepagePadrao.html';        
+        require_once '../views/paginas/homepagePadrao.html';
         break;
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/login':
         require_once '../views/paginas/login.html';
         break;
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/home':
-        require_once '../views/paginas/paciente/homepagePaci.html';        
+        require_once '../views/paginas/paciente/homepagePaci.html';
         break;
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/home':
-        require_once '../views/paginas/medico/homepaageMed.html';        
+        require_once '../views/paginas/medico/homepageMed.html';
         break;
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/admin/home':
-        require_once '../views/paginas/administrador/homepageAdm.html';        
+        require_once '../views/paginas/administrador/homepageAdm.html';
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/cadastro':
         $controller = new PacienteController();
         $controller->showCadastroPaciente();
