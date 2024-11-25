@@ -31,6 +31,7 @@ class AdminController {
             echo "Erro ao salvar o registrar!";
         }
     }
+    
     public function listPaciente() {
         // Pega todos os livros do banco de dados
         $paciente = new Paciente();

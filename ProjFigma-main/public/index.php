@@ -41,6 +41,15 @@ switch ($request) {
         $controller = new PacienteController();
         $controller->listPaciente();
         break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/update':
+        $controller = new PacienteController();
+        $controller->updatePaciente();
+        break;
+    case (preg_match('/\/ProjetoSPMED_Final\/PROJETO-FINAL\/ProjFigma-main\/public\/paciente\/update-paciente\/(\d+)/', $request, $matches) ? true : false): 
+        $id = $matches[1];
+        $controller = new PacienteController();
+        $controller->showUpdateForm($id);
+        break;
     case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/medico/cadastro':
         $controller = new MedicoController();
         $controller->showCadastroMedico();

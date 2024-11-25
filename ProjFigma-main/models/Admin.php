@@ -44,7 +44,7 @@ class Admin {
 
         return false;
     }
-
+    
     public function getAll() {
         $query = "SELECT * FROM " . $this->table_name;
         $stmt = $this->conn->prepare($query);
