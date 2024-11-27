@@ -5,6 +5,7 @@ require_once '../database.php';
 class Paciente {
     private $conn;
     private $table_name = "pacientes";
+    public $id;
     public $nome;
     public $cpf;
     public $data_nascimento;
@@ -60,7 +61,7 @@ class Paciente {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
     public function update() {
-        $query = "UPDATE " . $this->table_name . " SET nome = :nome, cpf = :cpf, data_nascimento = :data_nascimento, sexo = :sexo, etnia = :etnia, pais = :pais, cidade = :cidade, estado = :estado, estado = :estado,  WHERE id = :id";
+        $query = "UPDATE " . $this->table_name . " SET nome = :nome, cpf = :cpf, data_nascimento = :data_nascimento, sexo = :sexo, etnia = :etnia, pais = :pais, cidade = :cidade, estado = :estado, endereco = :endereco, telefone = :telefone, email = :email WHERE id = :id";
         $stmt = $this->conn->prepare($query);
 
         $stmt->bindParam(':nome', $this->nome);
@@ -74,6 +75,7 @@ class Paciente {
         $stmt->bindParam(':endereco', $this->endereco); // Atualizado aqui
         $stmt->bindParam(':telefone', $this->telefone);
         $stmt->bindParam(':email', $this->email);
+        $stmt->bindParam(':id', $this->id);
 
         return $stmt->execute();
     }

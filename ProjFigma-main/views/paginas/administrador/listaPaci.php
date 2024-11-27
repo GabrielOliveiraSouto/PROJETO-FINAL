@@ -47,7 +47,7 @@
                         <!-- Formulário para deletar o livro -->
                         <form action="/meu_projeto_livraria/delete-book" method="POST" style="display:inline;">
                          <!-- Campo oculto para enviar o título do livro a ser deletado -->
-                        <input type="hidden" name="title" value="<?php echo $book['title']; ?>">
+                        <input type="hidden" name="title" value="">
                         <button type="submit">Excluir</button>
                         </form>
         </td>

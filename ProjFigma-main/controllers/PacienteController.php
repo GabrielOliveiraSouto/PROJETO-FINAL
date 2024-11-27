@@ -49,20 +49,21 @@ class PacienteController {
     public function updatePaciente() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $paciente = new Paciente();// Recebe dados do formulário
-            $paciente ->nome = $_POST['Nome'];
-            $paciente ->cpf = $_POST['CPF'];
-            $paciente ->data_nascimento = $_POST['Data_de_nascimento'];
-            $paciente ->sexo= $_POST['Sexo'];
-            $paciente ->etnia = $_POST['Etnia'];
-            $paciente ->pais = $_POST['Pais'];
-            $paciente ->cidade = $_POST['Cidade'];
-            $paciente ->estado = $_POST['Estado'];
-            $paciente ->endereco = $_POST['Endereco'];
-            $paciente ->telefone = $_POST['Telefone'];
-            $paciente ->email = $_POST['E-mail'];
+            $paciente ->nome = $_POST['nome'];
+            $paciente ->cpf = $_POST['cpf'];
+            $paciente ->data_nascimento = $_POST['data_nascimento'];
+            $paciente ->sexo= $_POST['sexo'];
+            $paciente ->etnia = $_POST['etnia'];
+            $paciente ->pais = $_POST['pais'];
+            $paciente ->cidade = $_POST['cidade'];
+            $paciente ->estado = $_POST['estado'];
+            $paciente ->endereco = $_POST['endereco'];
+            $paciente ->telefone = $_POST['telefone'];
+            $paciente ->email = $_POST['email'];
+            $paciente->id = $_POST['id'];
 
             if ($paciente->update()) {
-                header('/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/views/paginas/administrador/listaPaci.php');
+                header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/lista');
             } else {
                 echo "Erro ao atualizar o livro.";
             }
