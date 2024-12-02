@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacientes Cadastrados</title>
+    <link rel="stylesheet" href="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/views/estilos/listapaci.css">
 </head>
+<style>
+    
+</style>
+
 <body>
-    <h1>Pacientes Cadastrados</h1>
+<header>
+    <h2>Controle de Pacientes</h2>
+</header>
+    <h1 class="plo">Pacientes Cadastrados</h1>
     <?php if (empty($pacientes)): ?>
         <p>Nenhum paciente.</p>
     <?php else: ?>
@@ -43,19 +51,18 @@
                         <td>
                          <!-- Link para a página de atualização do livro, enviando o ID do livro via URL -->
                          <a href="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/update-paciente/<?php echo $paciente['id']; ?>">Atualizar</a>
-            
                         <!-- Formulário para deletar o livro -->
-                        <form action="/meu_projeto_livraria/delete-book" method="POST" style="display:inline;">
+                        <form action="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/delete-paciente/" method="POST" style="display:inline;">
                          <!-- Campo oculto para enviar o título do livro a ser deletado -->
-                        <input type="hidden" name="title" value="">
-                        <button type="submit">Excluir</button>
+                        <input type="hidden" name="id" value="<?php echo $paciente['id']; ?>">
+                        <button type="submit" class="">Excluir</button>
                         </form>
-        </td>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
     <?php endif; ?>
-    <a href="/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/view/paciente_view.php">Cadastrar novo paciente</a>
+    <a href="/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/view/paciente_view.php" class="cadastro">Cadastrar novo paciente</a>
 </body>
 </html>

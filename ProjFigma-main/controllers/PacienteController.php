@@ -68,5 +68,17 @@ class PacienteController {
                 echo "Erro ao atualizar o livro.";
             }
         }
+    }
+    public function deletePacienteId() {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $paciente = new Paciente();
+            $paciente->id = $_POST['id'];
+
+            if ($paciente->deleteId()) {
+                header('Location: /ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/lista');
+            } else {
+                echo "Erro ao excluir paciente>";
+            }
         }
+    }
 }

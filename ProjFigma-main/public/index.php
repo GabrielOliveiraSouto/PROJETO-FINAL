@@ -45,6 +45,10 @@ switch ($request) {
         $controller = new PacienteController();
         $controller->updatePaciente();
         break;
+    case '/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/delete-paciente/';
+        $controller = new PacienteController();
+        $controller->deletePacienteId();
+        break;
     case (preg_match('/\/ProjetoSPMED_Final\/PROJETO-FINAL\/ProjFigma-main\/public\/paciente\/update-paciente\/(\d+)/', $request, $matches) ? true : false): 
         $id = $matches[1];
         $controller = new PacienteController();

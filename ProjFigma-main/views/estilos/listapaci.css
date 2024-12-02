@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(211, 211, 211);
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+  button {
+    background-image: linear-gradient(#05009c, #0004ff);
+    border: 1px solid #0077CC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    direction: ltr;
+    display: inline-block;
+    font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.47059;
+    min-width: 30px;
+    overflow: visible;
+    padding: 4px 15px;
+    text-align: center;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  button:disabled {
+    cursor: default;
+    opacity: .3;
+  }
+  
+  button:hover {
+    background-image: linear-gradient(#51A9EE, #147BCD);
+    border-color: #1482D0;
+    text-decoration: none;
+  }
+  
+  button:active {
+    background-image: linear-gradient(#3D94D9, #0067B9);
+    border-color: #006DBC;
+    outline: none;
+  }
+  
+  button:focus {
+    box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+    outline: none;
+  }
+
+  table {
+    width: 80%; /* Ajusta o tamanho da tabela */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    border-collapse: collapse;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  }
+  
+  table th, table td {
+    padding: 2px 1px; /* Menor espaçamento */
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s;
+  }
+  
+  table caption {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cadastro {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #05009c;
+    text-decoration: none;
+    border: 2px solid transparent; /* Borda inicial invisível */
+    border-radius: 8px; /* Borda arredondada */
+    text-align: center;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    margin-left: 150px;
+  }
+  
+  .cadastro:hover {
+    background-color: #0056b3;
+    border: 2px solid #0056b3;
+  }
+  header {
+    background-color: #05009c; /* Vermelho intenso */
+    color: #fff; /* Texto branco */
+    padding: 40px;
+    
+    text-align:left;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    border-bottom: 4px solid #05009c; /* Linha de destaque inferior */
+  }
+  
+  header h1 {
+    margin: 0; /* Remove margens do título */
+  }
+
+  .plo{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 155px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+  }

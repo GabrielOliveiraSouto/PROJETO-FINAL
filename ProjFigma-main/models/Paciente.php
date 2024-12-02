@@ -47,7 +47,6 @@ class Paciente {
     }
     public function getAll() {
         $query = "SELECT * FROM " . $this->table_name;
-  
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -75,6 +74,13 @@ class Paciente {
         $stmt->bindParam(':endereco', $this->endereco); // Atualizado aqui
         $stmt->bindParam(':telefone', $this->telefone);
         $stmt->bindParam(':email', $this->email);
+        $stmt->bindParam(':id', $this->id);
+
+        return $stmt->execute();
+    }
+    public function deleteId() {
+        $query = "DELETE FROM " . $this->table_name . " WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':id', $this->id);
 
         return $stmt->execute();
