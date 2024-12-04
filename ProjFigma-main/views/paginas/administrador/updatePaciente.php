@@ -76,7 +76,7 @@
     <div class="botaoenviar"><input type="submit" value="Atualizar Livro"></div>
 </form>
 
-<a href="/meu_projeto_livraria/list-books" class="book2">Voltar para a lista de pacientes</a>
+<a href="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/lista" class="book2">Voltar para a lista de pacientes</a>
 
 </body>
 </html>

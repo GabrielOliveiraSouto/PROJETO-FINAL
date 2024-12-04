@@ -5,7 +5,6 @@ require_once '../models/Paciente.php';
 class PacienteController {
 
     public function showCadastroPaciente() {
-        // Exibe o formulário de cadastro de livros
         require_once '../views/paginas/paciente/cadastroPaci.html';
     }
 

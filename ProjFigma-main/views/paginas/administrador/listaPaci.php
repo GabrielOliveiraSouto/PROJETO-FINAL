@@ -63,6 +63,6 @@
             </tbody>
         </table>
     <?php endif; ?>
-    <a href="/MVCSPMEDICAL/SPMEDGROUP/SiteHospital_XM%C3%A1quina/view/paciente_view.php" class="cadastro">Cadastrar novo paciente</a>
+    <a href="/ProjetoSPMED_Final/PROJETO-FINAL/ProjFigma-main/public/paciente/cadastro" class="cadastro">Cadastrar novo paciente</a>
 </body>
 </html>
